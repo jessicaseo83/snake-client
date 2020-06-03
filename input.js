@@ -25,7 +25,7 @@ const setupInput = function(conn) {
         conn.write('Move: right');
       }
       // send a string
-      if (key ==='m') {
+      if (key === 'm') {
         conn.write('Say: This is cool!')
       }
       // \u0003 maps to ctrl+c input
