@@ -24,6 +24,10 @@ const setupInput = function(conn) {
       if (key === 'd') {
         conn.write('Move: right');
       }
+      // send a string
+      if (key ==='m') {
+        conn.write('Say: This is cool!')
+      }
       // \u0003 maps to ctrl+c input
       if (key === '\u0003') {
         process.exit();
